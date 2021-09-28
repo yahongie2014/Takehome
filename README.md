@@ -11,6 +11,10 @@ You can install `BE take-home coding challenge` From Start Your Base Url / `Inst
 ```
 Ex: http://localhost/Takehome/install/
 ```
+Or Excute Command 
+`````
+> php -S 127.0.0.1:5000
+`````
 
 After Installation Must Be Redirect To `index.php` Root Folder to see Records once u install in first time
 in `config/condif.php`
