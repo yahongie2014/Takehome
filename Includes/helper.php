@@ -4,6 +4,7 @@
 */
 
 use Includes\FactoryDB;
+use Includes\Route;
 
 function getResult()
 {
@@ -47,7 +48,8 @@ function url($string)
 
 function dd($string)
 {
-    return var_dump($string) and die();
+    var_dump($string);
+    return die();
 }
 
 function view($string)
@@ -182,4 +184,36 @@ function getBrowser()
         'pattern' => $pattern,
         'ip_address' => get_ip_address()
     );
+}
+
+function navi()
+{
+    echo '
+  Navigation:
+  <ul>
+      <li><a href="' . BASEPATH . '">Home</a></li>
+      <li><a href="' . BASEPATH . 'install/index.php">installtion</a></li>
+      <li><a href="' . BASEPATH . 'Includes/ApiController.php">api</a></li>
+  </ul>
+  ';
+}
+
+function getRoutes()
+{
+    $routes = Route::getAll();
+    foreach ($routes as $route) {
+        echo $route['expression'] . ' (' . $route['method'] . ')';
+    }
+
+}
+
+function redirect($url = null, $fullpath = false, $code = 200)
+{
+    $url = ($fullpath === false) ? DIR . $url : $url;  // tried commenting out
+    if ($code == 200) {
+        header('Location: ' . $url);
+    } else {
+        header('Location: ' . $url, true, $code);
+    }
+    exit;
 }

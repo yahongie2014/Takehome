@@ -5,9 +5,10 @@ require_once __DIR__ . './Commands/createCartCommand.php';
 require_once __DIR__ . './Commands/createProductCommand.php';
 require_once __DIR__ . './Includes/FactoryDB.php';
 require_once __DIR__ . './config/db.php';
+require __DIR__ . '/Includes/Route.php';
+require __DIR__ . '/Routes/api.php';
 
 use Commands\createCartCommand;
-
 use Commands\createProductCommand;
 use Symfony\Component\Console\Application;
 

@@ -3,6 +3,8 @@ require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/config/db.php';
 require __DIR__ . '/Includes/helper.php';
 require __DIR__ . '/Includes/FactoryDB.php';
+require __DIR__ . '/Includes/Route.php';
+require __DIR__ . '/Routes/api.php';
 
 if (INSTALLED) {
     $cart = getResult();

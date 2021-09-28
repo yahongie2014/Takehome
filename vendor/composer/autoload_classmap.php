@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Commands\\createCartCommand' => $baseDir . '/Commands/createCartCommand.php',
+    'Commands\\createProductCommand' => $baseDir . '/Commands/createProductCommand.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

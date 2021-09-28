@@ -18,6 +18,7 @@ class ComposerStaticInit18e5a42150b1d0438c42a155c92c4805
 
     public static $classMap = array (
         'Commands\\createCartCommand' => __DIR__ . '/../..' . '/Commands/createCartCommand.php',
+        'Commands\\createProductCommand' => __DIR__ . '/../..' . '/Commands/createProductCommand.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
