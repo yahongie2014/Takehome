@@ -1,0 +1,22 @@
+{
+  "type": "project",
+  "description": "Task Project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Coder79",
+      "email": "a.saeed@null.net"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "symfony/console": "2.6.7",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "Commands"
+    ]
+  }
+}
