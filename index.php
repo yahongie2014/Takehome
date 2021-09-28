@@ -28,7 +28,7 @@ if (INSTALLED) {
 <body>
 <main class="cd-main container margin-top-xxl">
     <div class="text-component text-center">
-        <h1>Add to Cart Not Dynamic</h1>
+        <h1>Add to Cart Dynamic</h1>
         <p class="flex flex-wrap flex-center flex-gap-xxs">
         <form method="post">
             <button name="cmd" class="cd-cart cd-add-to-cart">Execute Cart Products</button>
