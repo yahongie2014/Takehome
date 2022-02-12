@@ -100,6 +100,6 @@ your Can see above table button u can execute command from it .
 ####
 
 $ Follow ME
-> Developed by Dev Ahmed S. Ahmed [coder79](https://twitter.com/yahongie) ❤
+> Developed by Dev Ahmed S. Ahmed [coder79](https://coder79.online/) ❤
 
 
